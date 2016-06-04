@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8"/>
+		<title>忘记密码</title>
+		<link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/forget.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/forget.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="title_logo">
+				<img src="img/login_title_logo.png" class="float-left">
+			</div>
+			<div class="middle">
+				<div class="img">
+					<img src="img/order_pic.png">
+				</div>
+				<div class="forget">
+					<div class="forget_title">
+						<div class="forget_font">忘记密码</div>
+					</div>
+					<div class="instr_word">请选择验证方式</div>
+					<div class="choose_way">
+						<div class="mail">注册邮箱</div>
+						<div class="mobile">已绑定手机</div>
+					</div>
+					<form class="mobile_way">
+						<div class="block">
+							<input type="text" name="usermobile" class="inputbox account-input" placeholder="手机号码">
+						</div>
+						<div class="block">
+							<input type="text" name="captcha" class="captcha account-input" placeholder="短信验证码">
+							<button class="sent_mail">发送验证码</button>
+						</div>
+						<div class="block">
+							<input type="text" name="password" class="password account-input" placeholder="密码">
+						</div>
+						<div class="block">
+							<input type="text" name="password" class="password account-input" placeholder="确认密码">
+						</div>
+					</form>
+					<form class="mail_way">
+						<div class="block">
+							<input type="text" name="usermail" class="inputbox account-input" placeholder="注册邮箱">
+						</div>
+						<div class="block">
+							<input type="text" name="captcha" class="captcha account-input" placeholder="验证码">
+							<img src="img/captcha_pic.png" class="captcha_pic">
+							<a class="captcha_font">看不清换一张</a>
+						</div>
+						<div class="block">
+							<input type="text" name="password" class="password account-input" placeholder="密码">
+						</div>
+						<div class="block">
+							<input type="text" name="password" class="password account-input" placeholder="确认密码">
+						</div>
+					</form>
+					<div>
+						<button class="login_in_button">确认</button>
+					</div>
+					<div class="sign_or_forget">
+						<a class="right"href="login.html">返回登录</a>
+						<div class="clear"></div>
+					</div>
+					<div class="line">
+						<span class="way_font">可使用以下账号直接登录</span>
+						<a class="qq"></a>
+						<a class="weibo"></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p class="line_one">
+			      	<a class="footer-link" href="http://kaidian.{{DOMAIN}}">我要开店</a> |
+			      	<a class="footer-link" href="http://{{DOMAIN}}/support/about/contact">联系我们</a> |
+			      	<a class="footer-link" href="http://{{DOMAIN}}/support/about/agreement">服务条款和协议</a> |
+			      	<a class="footer-link" href="http://jobs.{{DOMAIN}}">加入我们</a>
+			    </p>
+			    <p class="line_two">
+			      		增值电信业务许可证 : 
+			      	<a class="footer-link" target="_blank" rel="nofollow" href="http://www.shca.gov.cn/">
+			      		沪B2-20150033
+			      	</a> |
+			      	<a class="footer-link" target="_blank" rel="nofollow" href="http://www.miibeian.gov.cn">
+			      		沪ICP备 09007032</a> |
+			      	<a class="footer-link" target="_blank" rel="nofollow" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120305173227823">
+			      		上海工商行政管理
+			      		</a>
+			      		Copyright &copy;2008-2015 ele.me, All Rights Reserved.
+			    </p>
+			</div>
+		</div>
+	</body>
+</html>

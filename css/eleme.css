@@ -1,0 +1,209 @@
+
+#place{
+	position:absolute;
+	top: 260px;
+	left: 240px;
+	width: 130px;
+	height: 56px;
+	background:white;
+	line-height:  56px;
+	text-align: center;
+    font-weight: bold;
+    color:#796E6E;
+    font-size: 140%;
+    border-style: none;
+}
+#search-text{
+	position:absolute;
+	top:250px;
+	left:370px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 10px;
+	width:550px;
+	height:56px;
+	font-size:larger;
+	color:grey;
+	border-style:none;
+}
+#search-text:focus{
+	outline:none;
+}
+.icondiv{
+	position:absolute;
+	top:273px;
+	left:340px;
+	width: 30px;
+	height: 30px;
+	border-right: 1px solid lightgrey;
+}
+#icon{
+	line-height: 30px;
+	color:grey;	
+}
+#icon:hover{
+	cursor:pointer;
+}
+#search-button{
+    position:absolute;
+    top:260px;
+    left:950px;
+    width:158px;
+    height:56px;
+    background: #F74747;
+    word-spacing: 5px;
+    font-size: larger;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    border-style:none;
+}
+#search-button:hover{
+	background:red;
+	cursor:pointer;
+}
+#triangle{
+    display:none;
+	position:absolute;
+	top:318px;
+	left:280px;
+	width: 0;
+	height: 0;
+	border-top:10px solid transparent;
+	border-right:10px solid transparent;
+	border-bottom:10px solid white;
+	border-left:10px solid transparent;
+}
+
+#place-frame {
+	display:none;
+	position: absolute;
+	top: 338px;
+	left: 240px;
+	width: 770px;
+	height: 500px;
+	background: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+}
+#head{
+	position:relative;
+	left:30px;
+	top:30px;
+	border-style: solid;
+	border-width:0 0 1px 0;
+	border-bottom-color:#C8C6C6; 
+	width:673px;
+	height:0;
+}
+#place-text1 {
+	position: relative;
+	top: 10px;
+	left: 30px;
+	font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+#place-text2{
+    position:relative;
+    top:10px;
+    left:400px;
+    color:#2292DD;
+    font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+#place-text3{
+	position:relative;
+	top:9px;
+	left:395px;
+	font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+#guess{
+	position:relative;
+	top:40px;
+	left:30px;
+	width:673px;
+	height:50px;
+	border-style:solid;
+	border-width: 0 0 1px 0;
+	border-color: #C8C6C6;
+}
+#guess-text1{
+	position:relative;
+	top: 10px;
+	left: 0;
+	font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+	color:#2292DD;
+}
+#guess-text2{
+	border-radius: 2px;
+	position:relative;
+	top: -15px;
+	left:60px;
+	width:64px;
+	height:25px;
+	background-color: #F76809;
+	text-align: center;
+	font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+#guess-text2:hover{
+	cursor:pointer;
+}
+#guess-inputframe{
+	position:relative;
+	top:-40px;
+	left:150px;
+	padding-left: 20px;
+	border-style:solid;
+	border-width: 0 0 0 1px;
+	border-left-color: #C8C6C6;
+}
+#guess-input{
+	position:relative;
+	top: 0;
+	left: 0;
+	width:;
+	height:20px;
+	line-height: 20px;
+}
+#choose-place{
+	position:relative;
+	top: 60px;
+	left: 30px;
+	width:673px;
+}
+.letter{
+	position:relative;
+	top:5px;
+	color:#2292DD;
+	font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+#place-name1{
+	position:relative;
+	top: -18px;
+	left:50px;
+	width:650px;
+}
+#place-name2{
+	position:relative;
+	top: -18px;
+	left:50px;
+	width:650px;
+}
+#place-name3{
+	position:relative;
+	top: -18px;
+	left:50px;
+	width:650px;
+}
+.name{
+	display:inline-block;
+	position:relative;
+	width:72px;
+    font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+    margin-bottom:20px;
+}
+.name:hover{
+	color:#2292DD;
+	cursor:pointer;
+}

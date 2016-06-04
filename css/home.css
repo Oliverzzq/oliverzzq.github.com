@@ -1,0 +1,151 @@
+.container-fluid{
+	position: relative;
+	background: url(../img/background.png) no-repeat;
+	font: 400 1em/1.5 PingFang SC,Lantinghei SC,Helvetica Neue,
+	Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+.container{
+	width: 80%;
+	height: 500px;
+	font-size: 14px;
+}
+.main h2{
+	margin-top: 70px;
+	text-align: center;
+}
+.map-head{
+	padding-top: 25px;
+	line-height: 45px;
+	color: #fff;
+}
+.map-head-right{
+	margin-top:4px;
+	margin-left: 60px;
+	float: right;
+	word-spacing: .4em;
+}
+.map-head-right a{
+	color: inherit;
+}
+.kaidian{
+	margin-left: 20px;
+	padding: 4px 12px;
+	border-radius: 2px;
+	background-color: #5db423;
+}
+.car{
+	position: absolute;
+	bottom: 42px;
+	width: 75px;
+    height: 42px;
+	background-image: url(../img/car.png);
+	background-repeat: no-repeat;
+	position:relative;
+	-webkit-animation:myfirst 20s ease infinite;
+	will-change: transform;
+}
+@-webkit-keyframes myfirst 
+{
+	0%   {background-image: url(../img/car.png); left:150px; bottom: 42px;}
+	49%  {background-image: url(../img/car.png); left:1150px; bottom: 42px;}
+	50%  {background-image: url(../img/car-left.png); left:1150px; bottom: 42px;}
+	99%  {background-image: url(../img/car-left.png); left:150px; bottom: 42px;}
+	100% {background-image: url(../img/car.png); left:150px; bottom: 42px;}
+}
+.mapfooter {
+	width: 100%;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+}
+.mapfooter-app {
+    display: inline-block;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    text-align: left;
+}
+.mapfooter-app-image, .mapfooter-app-text {
+    vertical-align: middle;
+    display: inline-block;
+}
+.mapfooter-app-image {
+    position: relative;
+    width: 180px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.mapfooter-app-image img {
+    width: 100%;
+}
+.mapfooter-app-image span {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -10px;
+    left: 25px;
+    right: 25px;
+    background-color: #fff;
+    text-align: center;
+    color: #999;
+}
+.mapfooter-app-text {
+    margin-left: 20px;
+    font-size: 16px;
+}
+.mapfooter-app-text strong{
+	font-size: 30px;
+}
+.color-stress{
+	color: red;
+}
+.mapfooter-app-text p:nth-of-type(2) {
+    color: #666;
+}
+.mapfooter-link {
+    color: #666;
+    font-size: 9px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.mapfooter-link a:first-child {
+    border-left: 0;
+}
+
+.mapfooter-link a {
+    display: inline-block;
+    padding: 0 7px;
+    color: inherit;
+    border-left: 1px solid #ccc;
+}
+.mapfooter .footer-copyright {
+    padding-top: 0;
+}
+
+.footer-copyright {
+    font-size: 9px;
+    clear: both;
+    padding-top: 60px;
+    color: #999;
+    text-align: center;
+}
+.footer-copyright a {
+    color: inherit;
+}
+#myMap {
+    position: absolute;
+    width: 960px;
+    height: 422px;
+    background-color: rgb(229, 227, 223);
+    top: 333px;
+    left: 240px;
+    z-index: 1000;
+
+}
+#result {
+    position: absolute;
+    width: 300px;
+    height: 422px;
+    background: #cbcbcb;
+    top: 333px;
+    left: 240px;
+    z-index: 1001;
+}

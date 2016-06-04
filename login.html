@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8"/>
+		<title>登录</title>
+		<link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/login.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title_logo">
+				<img src="img/login_title_logo.png" class="float-left">
+			</div>
+			<div class="middle">
+				<div class="img">
+					<img src="img/order_pic.png">
+				</div>
+				<div class="login">
+					<div class="login_title">
+						<div class="login_font">登录</div>
+						<div class="mobile_login">
+							<a href="mobile_login.html">手机验证码登录</a>
+							<i class="fa fa-mobile fa-lg"></i>
+						</div>
+					</div>
+					<div class="block">
+						<input type="text" name="username" class="inputbox account-input" placeholder="用户名/电子邮箱/手机号">
+					</div>
+					<div class="block">
+						<input type="text" name="password" class="password account-input" placeholder="密码">
+					</div>
+					<div class="block">
+						<input type="text" name="captcha" class="captcha account-input" placeholder="验证码">
+						<img src="img/captcha_pic.png" class="captcha_pic">
+						<a class="captcha_font">看不清换一张</a>
+					</div>					
+					<div>
+						<input type="checkbox" checked="checked">下次自动登录
+					</div>
+					<div>
+						<button class="login_in_button">登录</button>
+					</div>
+					<div class="sign_or_forget">
+						<a class="left" href="register.html">新用户注册</a>
+						<a class="right" href="forget.html">忘记密码了?</a>
+						<div class="clear"></div>
+					</div>
+					<div class="line">
+						<span class="way_font">可使用以下账号直接登录</span>
+						<a class="qq"></a>
+						<a class="weibo"></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p class="line_one">
+			      	<a class="footer-link" href="http://kaidian.{{DOMAIN}}">我要开店</a> |
+			      	<a class="footer-link" href="http://{{DOMAIN}}/support/about/contact">联系我们</a> |
+			      	<a class="footer-link" href="http://{{DOMAIN}}/support/about/agreement">服务条款和协议</a> |
+			      	<a class="footer-link" href="http://jobs.{{DOMAIN}}">加入我们</a>
+			    </p>
+			    <p class="line_two">
+			      		增值电信业务许可证 : 
+			      	<a class="footer-link" target="_blank" rel="nofollow" href="http://www.shca.gov.cn/">
+			      		沪B2-20150033
+			      	</a> |
+			      	<a class="footer-link" target="_blank" rel="nofollow" href="http://www.miibeian.gov.cn">
+			      		沪ICP备 09007032</a> |
+			      	<a class="footer-link" target="_blank" rel="nofollow" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120305173227823">
+			      		上海工商行政管理
+			      		</a>
+			      		Copyright &copy;2008-2015 ele.me, All Rights Reserved.
+			    </p>
+			</div>
+		</div>
+	</body>
+</html>
