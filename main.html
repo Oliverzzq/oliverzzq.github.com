@@ -5,10 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
+	<link rel="stylesheet" href="resource/vendor.css">
 	<link rel="stylesheet" href="resource/reset.css">
 	<link rel="stylesheet" href="resource/style.css">
 	<link href="resource/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="resource\FONT\css\font-awesome.min.css">
+	
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -16,8 +18,10 @@
 		
 		<div class="cd-tabs">
 			<nav>
-				<div class="topbar-logo">
-					<img src="img/logo3.png" alt="">
+				<a href="/" class="topbar-logo icon-logo"><span>饿了么</span></a>
+				<div class="user">
+					<span class="topbar-icon icon-profile" ></span> 
+					<a href="">登录/</a><a href="">注册</a>
 				</div>
 				<ul class="cd-tabs-navigation">
 					<li><a data-content="homepage" class="selected" href="#0" style="color:white">首页</a></li>
@@ -26,14 +30,13 @@
 					</a></li>
 					<li><a data-content="order"  href="#0" style="color:white">我的订单</a></li>
 					<li><a data-content="cooperation"  href="#0" style="color:white">加盟合作</a></li>
-					<li><a data-content="shop"  href="#0" style="font-size:14px">积分商场</a></li>
-					<li><a data-content="service"  href="#0" style="font-size:14px">服务中心</a></li>
-					<li><a data-content="mobile"  href="#0" style="font-size:14px">手机应用</a></li>
-					<div class="user">
-						<i class="fa fa-user" style="font-size:20px"></i>
-						<a href="login.html"  class="login">登录</a>/
-						<a href="register.html" class="register">注册</a>
-					</div>
+					<li><a data-content="shop"  href="#0" style="font-size:14px">
+						<i class="topbar-icon icon-gift"></i>积分商场</a></li>
+					<li><a data-content="service"  href="#0" style="font-size:14px">
+						<i class="topbar-icon icon-service"></i>服务中心</a></li>
+					<li><a data-content="mobile"  href="#0" style="font-size:14px">
+						<i class="topbar-icon icon-mobile"></i>手机应用</a></li>
+					
 				</ul> <!-- cd-tabs-navigation -->
 				
 			</nav>
@@ -100,19 +103,15 @@
 							</span>
 						</div>
 						<div class="place-shop">
-							<a href=" " class="shop-block">
+							<a href="shop.html" class="shop-block">
 								<div class="shop-logo">
 									<img src="img/shop-logo.jpeg" alt="">
 									<span>41分钟</span>
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">轰咖咖喱饭（仓前路店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:86%;"></span>
 									</div>
 									<span class="shop-monthsale">月售914单</span>
 									<div class="shop-cost">15元起送 / 配送费2元</div>
@@ -134,12 +133,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">轰咖咖喱饭｜⚽️（仓前路店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:86%;"></span>
 									</div>
 									<span class="shop-monthsale">月售914单</span>
 									<div class="shop-cost">15元起送 / 配送费2元</div>
@@ -161,12 +156,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">辛生活麻辣美食（溪望路店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:84%;"></span>
 									</div>
 									<span class="shop-monthsale">月售564单</span>
 									<div class="shop-cost">15元起送 / 配送费2元</div>
@@ -190,12 +181,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">何止家常菜（仓前路店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:82%;"></span>
 									</div>
 									<span class="shop-monthsale">月售122单</span>
 									<div class="shop-cost">15元起送 / 配送费2元</div>
@@ -218,12 +205,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">超级大食代（仓前路店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="with:74%;"></span>
 									</div>
 									<span class="shop-monthsale">月售117单</span>
 									<div class="shop-cost">15元起送 / 配送费2元</div>
@@ -244,12 +227,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">秀艾健康餐</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:90%;"></span>
 									</div>
 									<span class="shop-monthsale">月售2343单</span>
 									<div class="shop-cost">20元起送 / 配送费1元</div>
@@ -270,12 +249,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">道味炸酱面 </div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:86%;"></span>
 									</div>
 									<span class="shop-monthsale">月售171单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -295,12 +270,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">游子麻辣烫游子老鸭汤 </div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:80%;"></span>
 									</div>
 									<span class="shop-monthsale">月售221单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -321,12 +292,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">南方饺子</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:90%;"></span>
 									</div>
 									<span class="shop-monthsale">月售3335单</span>
 									<div class="shop-cost">10元起送 / 配送费2元</div>
@@ -347,12 +314,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">老北京片皮烤鸭 杭师大店</div>
-									<div class="shop-star">
-										<i class="fa fa-star dark"></i>
-										<i class="fa fa-star dark"></i>
-										<i class="fa fa-star dark"></i>
-										<i class="fa fa-star dark"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:0%;"></span>
 									</div>
 									<span class="shop-monthsale">月售55单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -372,12 +335,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">荷包小食堂 </div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:78%;"></span>
 									</div>
 									<span class="shop-monthsale">月售502单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -397,12 +356,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">老周菜饭馆（仓前店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:90%;"></span>
 									</div>
 									<span class="shop-monthsale">月售3529单</span>
 									<div class="shop-cost">10元起送 / 配送费2元</div>
@@ -423,12 +378,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">爸妈味道</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:88%;"></span>
 									</div>
 									<span class="shop-monthsale">月售8138单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -448,12 +399,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">凡仔汉堡（仓兴街店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:90%;"></span>
 									</div>
 									<span class="shop-monthsale">月售3833单</span>
 									<div class="shop-cost">0元起送 / 配送费3元</div>
@@ -474,12 +421,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">新味美食</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:84%;"></span>
 									</div>
 									<span class="shop-monthsale">月售4069单</span>
 									<div class="shop-cost">0元起送 / 配送费3元</div>
@@ -501,12 +444,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">小神厨</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:88%;"></span>
 									</div>
 									<span class="shop-monthsale">月售1841单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -528,12 +467,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">鲜竹寿司</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:88%;"></span>
 									</div>
 									<span class="shop-monthsale">月售2899单</span>
 									<div class="shop-cost">20元起送 / 配送费1元</div>
@@ -553,12 +488,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">爱上冒菜</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:84%;"></span>
 									</div>
 									<span class="shop-monthsale">月售6124单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -580,12 +511,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">吉阿婆麻辣烫</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:90%;"></span>
 									</div>
 									<span class="shop-monthsale">月售1644单</span>
 									<div class="shop-cost">15元起送 / 配送费1元</div>
@@ -604,12 +531,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">冒呀冒菜</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:0%;"></span>
 									</div>
 									<span class="shop-monthsale">月售6单</span>
 									<div class="shop-cost">20元起送 / 配送费2元</div>
@@ -630,12 +553,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">衢州汤面</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:82%;"></span>
 									</div>
 									<span class="shop-monthsale">月售2221单</span>
 									<div class="shop-cost">10元起送 / 配送费2元</div>
@@ -657,12 +576,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">杰克汉堡</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:80%;"></span>
 									</div>
 									<span class="shop-monthsale">月售2224单</span>
 									<div class="shop-cost">0元起送 / 配送费2元</div>
@@ -682,12 +597,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">百基拉</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star dark"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:84%;"></span>
 									</div>
 									<span class="shop-monthsale">月售2283单</span>
 									<div class="shop-cost">0元起送 / 配送费2元</div>
@@ -707,12 +618,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">豪大大鸡排</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:90%;"></span>
 									</div>
 									<span class="shop-monthsale">月售2249单</span>
 									<div class="shop-cost">20元起送 / 配送费3元</div>
@@ -769,12 +676,8 @@
 								</div>
 								<div class="shop-content">
 									<div class="shop-title">香港新记茶餐厅（淘宝店）</div>
-									<div class="shop-star">
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
+									<div class="starrating icon-star">
+										<span class="icon-star" style="width:84%;"></span>
 									</div>
 									<span class="shop-monthsale">月售1178单</span>
 									<div class="shop-cost">20元起送 / 配送费4元</div>
@@ -795,28 +698,32 @@
 			
 			<div class="sidebar">
 			     <div  class='my-order'>
-			        <i class='fa fa-list-alt fa-lg'></i>
+			        <i class='sidebar-icon icon-order'></i>
 			     </div>
 			     <div class='line1'>
 			     </div>
 			     <div class='my-shopping'>
-			        <i id='shopping-icon'class='fa fa-shopping-bag '></i>
+			        <i id='shopping-icon'class='sidebar-icon icon-cart '></i>
 			        <span id='my-shopping-text'>购物车</span>
 			     </div>
 			     <div class='line2'>
 			     </div>
 			     <div class='my-message'>
-			        <span id='message-icon'class='fa fa-envelope-o fa-lg'></span>
+			        <span id='message-icon'class='sidebar-icon icon-notice'></span>
 			     </div>
 			     <div class='history'>
-			        <i id='history-icon' class='fa fa-clock-o fa-lg'></i>
+			        <i id='history-icon' class='sidebar-icon icon-history'></i>
 			     </div>
+			     <div class="bottom">
+				     <div class="sidebar-icon icon-QR-code"></div>
+				     <div class="sidebar-icon icon-service"></div>
+			 	</div>
 			 </div>
 			 <div class='sidebar-content'>
 			 	<div class='sidebar-content-head '  align="left">
 			 	</div>
 			 	<div id='angle-icon'>
-			 	   <i  class='fa fa-angle-double-right fa-lg'></i>
+			 	   <i  class='sidebar-icon icon-angle-double-right'></i>
 			 	</div>
 			 	<div class='sidebar-content-text'>
 			 	    <div class='sidebar-content-text1' align='center'>
