@@ -2,274 +2,274 @@
 <html>
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title ng-bind="SEO.title">饿了么-网上订餐_外卖_饿了么订餐官网</title>
+    <title ng-bind="SEO.title">饿了么-网上订餐_外卖_饿了么订餐官网</title>
 
-	<link href="resource/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="resource\FONT\css\font-awesome.min.css">
-	<link rel="stylesheet" href="css/home.css">
-	<link rel="stylesheet" href="css/eleme.css">
-	<script src="http://api.map.baidu.com/api?v=2.0&ak=G7dQGflVXljDgtNeOx9DWe9AmIpfoM6f"></script>
+    <link href="resource/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resource\FONT\css\font-awesome.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/eleme.css">
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=G7dQGflVXljDgtNeOx9DWe9AmIpfoM6f"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
     <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
     <script src="resource/jquery-1.12.3.min.js"></script>
-	
+    
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="container">
-			<div class="map-head">
-				<img src="img/logo1.png" href="home.html" class="logo-map">
-				<span class="map-head-right">
-					<a href="register.html" target="_blank">注册</a>
-					<span>|</span> 
-					<a href="login.html" target="_blank">登录</a> 
-					<a class="kaidian" href="#">我要开店</a>
-				</span>
-			</div>
-			<div class="main">
-				<h2>
-					<img src="img/logo2.png" alt="" class="logo-text">
-				</h2>
-				<div class="location">
-				</div>
-			</div>
-			
-			<div id='place'>杭州</div>
-			<div class="icondiv">
-				<i id='icon' class='fa fa-chevron-down'></i>
-			</div>
-			<input type='text' id='search-text'  placeholder='请输入你的收货地址（写字楼，校区，街道或者学校)'/>
-			<button id='search-button' >搜 索</button>
-			<div id="result"></div>
-			<div class="baidu_map">
-				<div id="myMap"></div>
-				<script type="text/javascript">             
-    					$(document).ready(function(){
-						$(".baidu_map").hide();
-						$("#result").hide();
-						$("#search-button").click(function(){
-							$("#result").show();
-							$(".baidu_map").show();
-							var place,address;
-							place=$("#place").text();
-							address=$("#search-text").val();
-							var map = new BMap.Map("myMap");
-							var local = new BMap.LocalSearch(map, {
-										  pageCapacity: 8,
-										  renderOptions: {
-										    map: map,
-										    panel: "result"
-										  }
-										});
-							    
-							//map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);   
-							var myGeo = new BMap.Geocoder();
-							// 将地址解析结果显示在地图上，并调整地图视野    
-							myGeo.getPoint(address, function(point) {
-							  if (point) {
-							    map.centerAndZoom(point, 16);
-							    map.addOverlay(new BMap.Marker(point));
-							  }
-							}, place); 
-							map.addControl(new BMap.NavigationControl());   
-							map.addControl(new BMap.ScaleControl());    
-							map.addControl(new BMap.OverviewMapControl());    
-							map.addControl(new BMap.MapTypeControl());    
-							map.setCurrentCity(place); 
-							
-							if(address.length==0)
-							{
-								local.searchNearby("快餐",place);
-								local.search(place);
-							}
-							else
-							{	
-								local.searchNearby("快餐",address);
-								local.search(address);
-							}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="map-head">
+                <img src="img/logo1.png" href="home.html" class="logo-map">
+                <span class="map-head-right">
+                    <a href="register.html" target="_blank">注册</a>
+                    <span>|</span> 
+                    <a href="login.html" target="_blank">登录</a> 
+                    <a class="kaidian" href="#">我要开店</a>
+                </span>
+            </div>
+            <div class="main">
+                <h2>
+                    <img src="img/logo2.png" alt="" class="logo-text">
+                </h2>
+                <div class="location">
+                </div>
+            </div>
+            
+            <div id='place'>杭州</div>
+            <div class="icondiv">
+                <i id='icon' class='fa fa-chevron-down'></i>
+            </div>
+            <input type='text' id='search-text'  placeholder='请输入你的收货地址（写字楼，校区，街道或者学校)'/>
+            <button id='search-button' >搜 索</button>
+            <div id="result"></div>
+            <div class="baidu_map">
+                <div id="myMap"></div>
+                <script type="text/javascript">             
+                        $(document).ready(function(){
+                        $(".baidu_map").hide();
+                        $("#result").hide();
+                        $("#search-button").click(function(){
+                            $("#result").show();
+                            $(".baidu_map").show();
+                            var place,address;
+                            place=$("#place").text();
+                            address=$("#search-text").val();
+                            var map = new BMap.Map("myMap");
+                            var local = new BMap.LocalSearch(map, {
+                                          pageCapacity: 8,
+                                          renderOptions: {
+                                            map: map,
+                                            panel: "result"
+                                          }
+                                        });
+                                
+                            //map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);   
+                            var myGeo = new BMap.Geocoder();
+                            // 将地址解析结果显示在地图上，并调整地图视野    
+                            myGeo.getPoint(address, function(point) {
+                              if (point) {
+                                map.centerAndZoom(point, 16);
+                                map.addOverlay(new BMap.Marker(point));
+                              }
+                            }, place); 
+                            map.addControl(new BMap.NavigationControl());   
+                            map.addControl(new BMap.ScaleControl());    
+                            map.addControl(new BMap.OverviewMapControl());    
+                            map.addControl(new BMap.MapTypeControl());    
+                            map.setCurrentCity(place); 
+                            
+                            if(address.length==0)
+                            {
+                                local.searchNearby("快餐",place);
+                                local.search(place);
+                            }
+                            else
+                            {    
+                                local.searchNearby("快餐",address);
+                                local.search(address);
+                            }
 
-						});
-				});  
-				</script>  
-			</div>
-			<div id='place-choosing'>
-				<div id='triangle'>
-				</div>
-				<div id='place-frame'>
+                        });
+                });  
+                </script>  
+            </div>
+            <div id='place-choosing'>
+                <div id='triangle'>
+                </div>
+                <div id='place-frame'>
 
-					<span id='place-text1'>请选择你所在的城市
-					</span>
-					<span id='place-text2'>选城市
-					</span>
-					<span id='place-text3'>>定位置>叫外卖
-					</span>
-					<div id='head'>
-					</div>
-					<div id='guess'>
-						<span id='guess-text1'>猜你在
-						</span>
-						<div id="guess-text2">天台
-						</div>
-						<div id="guess-inputframe">
-							<input id='guess-input'type='text' placeholder='请输入城市'>
-						</div>
-					</div>
-					<div id='choose-place'>
-						<span class='letter'>A</span>
-						<div id='place-name1'>
-							<span class='name'>安宁</span>
-							<span class="name">安化</span>
-							<span class="name">安阳</span>
-							<span class="name">安岳</span>
-							<span class="name">安康</span>
-							<span class="name">安顺</span>
-							<span class="name">安乡</span>
-							<span class="name">安仁</span>
-							<span class="name">阿克苏</span>
-							<span class="name">安庆</span>
-							<span class="name">阿拉尔</span>
-							<span class="name">安吉</span>
-							<span class="name">鞍山</span>
-							<span class="name">安新</span>
-							<span class="name">安丘</span>
-							<span class="name">澳门</span>
-							<span class="name">安陆</span>
-							<span class="name">安溪</span>
-							<span class="name">安义</span>
-							
-							<span class="name">阿荣旗</span>
-						</div>
-						<span class='letter'>B</span>
-						<div id='place-name2'>
-						<span class="name">北京</span>
-						<span class="name">保山</span>
-						<span class="name">白银</span>
-						<span class="name">北海</span>
-						<span class="name">北流</span>
-						<span class="name">亳州</span>
-						<span class="name">巴中</span>
-						<span class="name">包头</span>
-						<span class="name">滨海</span>
-						<span class="name">蚌埠</span>
-						<span class="name">本溪</span>
-						<span class="name">霸州</span>
-						<span class="name">宝应</span>
-						<span class="name">保定</span>
-						<span class="name">滨州</span>
-						<span class="name">毕节</span>
-						<span class="name">泌阳</span>
-						<span class="name">白山</span>
-						<span class="name">巴彦淖尔</span>
-						<span class="name">百色</span>
-						<span class="name">巴南</span>
-						<span class="name">北碚</span>
-						<span class="name">璧山</span>
-						<span class="name">博爱</span>
-						<span class="name">宝丰</span>
-						<span class="name">北安</span>
-						<span class="name">博兴</span>
-						<span class="name">白城</span>
-						<span class="name">泊头</span>
-						<span class="name">宾县</span>
-						<span class="name">北票</span>
-						<span class="name">宝清</span>
-						</div>
-						<span class='letter'>C</span>
-                        <div id='place-name3'>
-                        	<span class="name">成都</span>
-                        	<span class="name">赤峰</span>
-                        	<span class="name">长汀</span>
-                        	<span class="name">昌吉</span>
-                        	<span class="name">长春</span>
-                        	<span class="name">崇州</span>
-                        	<span class="name">潮安</span>
-                        	<span class="name">长沙</span>
-                        	<span class="name">楚雄</span>
-                        	<span class="name">慈利</span>
-                        	<span class="name">崇左</span>
-                        	<span class="name">重庆</span>
-                        	<span class="name">长岭</span>
-                        	<span class="name">从化</span>
-                        	<span class="name">慈溪</span>
-                        	<span class="name">苍南</span>
-                        	<span class="name">常州</span>
-                        	<span class="name">澄迈</span>
-                        	<span class="name">长兴</span>
-                        	<span class="name">滁州</span>
-                        	<span class="name">淳安</span>
-                        	<span class="name">常德</span>
-                        	<span class="name">长垣</span>
-                        	<span class="name">长葛</span>
-                        	<span class="name">昌图</span>
-                        	<span class="name">曹县</span>
-                        	<span class="name">承德</span>
-                        	<span class="name">沧州</span>
-                        	<span class="name">郴州</span>
-                        	<span class="name">昌邑</span>
-                        	<span class="name">昌乐</span>
-                        	<span class="name">茌平</span>
-                        	<span class="name">成武</span>
-                        	<span class="name">长丰</span>
-                        	<span class="name">赤壁</span>
-                        	<span class="name">潮州</span>
-                        	<span class="name">长治</span>
-                        	<span class="name">崇阳</span>
-                        	<span class="name">巢湖</span>
-                        	<span class="name">崇明</span>
-                        	<span class="name">池州</span>
-                        	<span class="name">常宁</span>
-                        	<span class="name">茶陵</span>
-                        	<span class="name">长乐</span>
-                        	<span class="name">昌都</span>
-                        	<span class="name">昌都地区</span>
-                        	<span class="name">澄海</span>
-                        	<span class="name">长泰</span>
-                        	<span class="name">常山县</span>
-                        	<span class="name">潮南</span>
-                        	<span class="name">昌黎</span>
-                        	<span class="name">曹妃甸区</span>
+                    <span id='place-text1'>请选择你所在的城市
+                    </span>
+                    <span id='place-text2'>选城市
+                    </span>
+                    <span id='place-text3'>>定位置>叫外卖
+                    </span>
+                    <div id='head'>
+                    </div>
+                    <div id='guess'>
+                        <span id='guess-text1'>猜你在
+                        </span>
+                        <div id="guess-text2">天台
                         </div>
-					</div>
-				</div>
-			</div>
+                        <div id="guess-inputframe">
+                            <input id='guess-input'type='text' placeholder='请输入城市'>
+                        </div>
+                    </div>
+                    <div id='choose-place'>
+                        <span class='letter'>A</span>
+                        <div id='place-name1'>
+                            <span class='name'>安宁</span>
+                            <span class="name">安化</span>
+                            <span class="name">安阳</span>
+                            <span class="name">安岳</span>
+                            <span class="name">安康</span>
+                            <span class="name">安顺</span>
+                            <span class="name">安乡</span>
+                            <span class="name">安仁</span>
+                            <span class="name">阿克苏</span>
+                            <span class="name">安庆</span>
+                            <span class="name">阿拉尔</span>
+                            <span class="name">安吉</span>
+                            <span class="name">鞍山</span>
+                            <span class="name">安新</span>
+                            <span class="name">安丘</span>
+                            <span class="name">澳门</span>
+                            <span class="name">安陆</span>
+                            <span class="name">安溪</span>
+                            <span class="name">安义</span>
+                            
+                            <span class="name">阿荣旗</span>
+                        </div>
+                        <span class='letter'>B</span>
+                        <div id='place-name2'>
+                        <span class="name">北京</span>
+                        <span class="name">保山</span>
+                        <span class="name">白银</span>
+                        <span class="name">北海</span>
+                        <span class="name">北流</span>
+                        <span class="name">亳州</span>
+                        <span class="name">巴中</span>
+                        <span class="name">包头</span>
+                        <span class="name">滨海</span>
+                        <span class="name">蚌埠</span>
+                        <span class="name">本溪</span>
+                        <span class="name">霸州</span>
+                        <span class="name">宝应</span>
+                        <span class="name">保定</span>
+                        <span class="name">滨州</span>
+                        <span class="name">毕节</span>
+                        <span class="name">泌阳</span>
+                        <span class="name">白山</span>
+                        <span class="name">巴彦淖尔</span>
+                        <span class="name">百色</span>
+                        <span class="name">巴南</span>
+                        <span class="name">北碚</span>
+                        <span class="name">璧山</span>
+                        <span class="name">博爱</span>
+                        <span class="name">宝丰</span>
+                        <span class="name">北安</span>
+                        <span class="name">博兴</span>
+                        <span class="name">白城</span>
+                        <span class="name">泊头</span>
+                        <span class="name">宾县</span>
+                        <span class="name">北票</span>
+                        <span class="name">宝清</span>
+                        </div>
+                        <span class='letter'>C</span>
+                        <div id='place-name3'>
+                            <span class="name">成都</span>
+                            <span class="name">赤峰</span>
+                            <span class="name">长汀</span>
+                            <span class="name">昌吉</span>
+                            <span class="name">长春</span>
+                            <span class="name">崇州</span>
+                            <span class="name">潮安</span>
+                            <span class="name">长沙</span>
+                            <span class="name">楚雄</span>
+                            <span class="name">慈利</span>
+                            <span class="name">崇左</span>
+                            <span class="name">重庆</span>
+                            <span class="name">长岭</span>
+                            <span class="name">从化</span>
+                            <span class="name">慈溪</span>
+                            <span class="name">苍南</span>
+                            <span class="name">常州</span>
+                            <span class="name">澄迈</span>
+                            <span class="name">长兴</span>
+                            <span class="name">滁州</span>
+                            <span class="name">淳安</span>
+                            <span class="name">常德</span>
+                            <span class="name">长垣</span>
+                            <span class="name">长葛</span>
+                            <span class="name">昌图</span>
+                            <span class="name">曹县</span>
+                            <span class="name">承德</span>
+                            <span class="name">沧州</span>
+                            <span class="name">郴州</span>
+                            <span class="name">昌邑</span>
+                            <span class="name">昌乐</span>
+                            <span class="name">茌平</span>
+                            <span class="name">成武</span>
+                            <span class="name">长丰</span>
+                            <span class="name">赤壁</span>
+                            <span class="name">潮州</span>
+                            <span class="name">长治</span>
+                            <span class="name">崇阳</span>
+                            <span class="name">巢湖</span>
+                            <span class="name">崇明</span>
+                            <span class="name">池州</span>
+                            <span class="name">常宁</span>
+                            <span class="name">茶陵</span>
+                            <span class="name">长乐</span>
+                            <span class="name">昌都</span>
+                            <span class="name">昌都地区</span>
+                            <span class="name">澄海</span>
+                            <span class="name">长泰</span>
+                            <span class="name">常山县</span>
+                            <span class="name">潮南</span>
+                            <span class="name">昌黎</span>
+                            <span class="name">曹妃甸区</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
-		<div class="car"></div>
-	
-		<div class="mapfooter">
-			<div class="mapfooter-app">
-				<div class="mapfooter-app-image">
-					<img src="img/二维码.png" alt="扫码下载 APP"> 
-					<span>扫码下载 APP</span>
-				</div>
-				<div class="mapfooter-app-text">
-					<p>新用户首次下单</p>
-					<strong>最高</strong><strong class="color-stress">立减20元</strong><p>立即下载APP，享更多优惠吧！</p>
-				</div>
-			</div>
-			<p class="mapfooter-link">
-				<a href="http://kaidian.ele.me" ubt-click="1434">我要开店</a> 
-				<a href="/support/about" ubt-click="1435">联系我们</a> 
-				<a href="/support/about/agreement" ubt-click="1436">服务条款和协议</a> 
-				<a href="http://jobs.ele.me" ubt-click="1437">加入我们</a>
-			</p>
-			<div class="footer-copyright serif">
-				增值电信业务许可证 : 
-				<a href="http://www.shca.gov.cn/" target="_blank">沪B2-20150033</a> | <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备 09007032</a> | <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120305173227823" target="_blank">上海工商行政管理</a> Copyright ©2008-2015 ele.me, All Rights Reserved.
-			</div>
-			<div class="footer-police container">
-				<a href="http://www.zx110.org/picp/?sn=310100103568" rel="nofollow" target="_blank">
-					<img alt="已通过沪公网备案，备案号 310100103568" src="img/bottom.jpg" height="30">
-				</a>
-			</div>
+        </div>
+        <div class="car"></div>
+    
+        <div class="mapfooter">
+            <div class="mapfooter-app">
+                <div class="mapfooter-app-image">
+                    <img src="img/二维码.png" alt="扫码下载 APP"> 
+                    <span>扫码下载 APP</span>
+                </div>
+                <div class="mapfooter-app-text">
+                    <p>新用户首次下单</p>
+                    <strong>最高</strong><strong class="color-stress">立减20元</strong><p>立即下载APP，享更多优惠吧！</p>
+                </div>
+            </div>
+            <p class="mapfooter-link">
+                <a href="http://kaidian.ele.me" ubt-click="1434">我要开店</a> 
+                <a href="/support/about" ubt-click="1435">联系我们</a> 
+                <a href="/support/about/agreement" ubt-click="1436">服务条款和协议</a> 
+                <a href="http://jobs.ele.me" ubt-click="1437">加入我们</a>
+            </p>
+            <div class="footer-copyright serif">
+                增值电信业务许可证 : 
+                <a href="http://www.shca.gov.cn/" target="_blank">沪B2-20150033</a> | <a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备 09007032</a> | <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120305173227823" target="_blank">上海工商行政管理</a> Copyright ©2008-2015 ele.me, All Rights Reserved.
+            </div>
+            <div class="footer-police container">
+                <a href="http://www.zx110.org/picp/?sn=310100103568" rel="nofollow" target="_blank">
+                    <img alt="已通过沪公网备案，备案号 310100103568" src="img/bottom.jpg" height="30">
+                </a>
+            </div>
 
-		</div>
-	</div>
+        </div>
+    </div>
 </body>
 
 <script src="resource/bootstrap/dist/js/bootstrap.min.js"></script>
