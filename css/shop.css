@@ -273,9 +273,11 @@ body {
 }
 .shopguide-favor i {
     font-size: 20px;
+    cursor: pointer;
 }
 .shopguide-favor span {
     display: block;
+
 }
 .shopnav {
     line-height: 57px;
@@ -733,6 +735,81 @@ a.inherit {
 	background-color: #e4e4e4;
     color: #333;
     width: 40%;
+}
+.shopmenu-food-zoomin{
+    position: fixed;
+    padding: 30px 40px 30px 40px;
+    z-index: 10;
+    background-color: #fff;
+    display: none;
+}
+.style{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(0,0,0,0.5);
+}
+.zoomin-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 12px;
+}
+.zoomin-content{
+    white-space: nowrap;
+}
+.zoomin-food-img{
+    width: 360px;
+    height: 360px;
+    margin-right: 30px;
+    display: inline-block;
+    white-space: normal;
+
+}
+.zoomin-food-info{
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+}
+.zoomin-food-name{
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.zoomin-cartitem{
+    margin: 20px 0 30px 0;
+    position: relative;
+}
+.zoomin-food-price{
+    position: static;
+    color: #f17530;
+    font-size: 30px;
+}
+.zoomin-cartbutton{
+    position: static;
+    float: right;
+    margin-top: 10px;
+}
+.ratingcount{
+    font-size: 14px;
+    color: #aaa;
+    border-bottom: 1px solid #ddd;
+}
+.rate{
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+    color: #999;
+}
+.rate img{
+    border-radius: 50%;
+    float: right;
 }
 @media (min-width: 1260px){
 	.container {width: 1180px;}
