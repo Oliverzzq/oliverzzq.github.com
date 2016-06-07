@@ -128,9 +128,7 @@ a,a:hover{
 	margin-bottom: 1px;
 	position: relative;
 }
-.first,.second,.third{
-	animation: slide 20s linear infinite;
-}
+
 
 .slidepager{
 	position: absolute;
@@ -148,15 +146,52 @@ a,a:hover{
 .num1{
 	color: #fff;
 	background-color: rgba(255,131,51,0.5);
-	animation: slide-page-first 20s linear infinite;
+	-webkit-animation: slide-page-first 20s linear infinite;
 }
 .num2{
-	animation: slide-page-second 20s linear infinite;
+	-webkit-animation: slide-page-second 20s linear infinite;
 }
 .num3{
-	animation: slide-page-third 20s linear infinite;
+	-webkit-animation: slide-page-third 20s linear infinite;
+}
+.first,.second,.third{
+	position: relative;
+	animation: slide 20s linear infinite;
+	-webkit-animation: slide 20s linear infinite;
+	-moz-animation: slide 20s linear infinite;
+	-o-animation: slide 20s linear infinite;
+}
+@keyframes slide{
+	0% {top: -20px;}
+	25%{top: -20px;}
+	30%{top: -122px;}
+	55%{top: -122px;}
+	60%{top: -224px;}
+	85%{top: -224px;}
+	90%{top: -20px;}
+	100%{top: -20px;}
 }
 @-webkit-keyframes slide{
+	0% {top: -20px;}
+	25%{top: -20px;}
+	30%{top: -122px;}
+	55%{top: -122px;}
+	60%{top: -224px;}
+	85%{top: -224px;}
+	90%{top: -20px;}
+	100%{top: -20px;}
+}
+@-moz-keyframes slide{
+	0% {top: -20px;}
+	25%{top: -20px;}
+	30%{top: -122px;}
+	55%{top: -122px;}
+	60%{top: -224px;}
+	85%{top: -224px;}
+	90%{top: -20px;}
+	100%{top: -20px;}
+}
+@-o-keyframes slide{
 	0% {top: -20px;}
 	25%{top: -20px;}
 	30%{top: -122px;}
