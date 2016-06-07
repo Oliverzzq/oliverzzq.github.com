@@ -87,7 +87,7 @@
 	background: white;
     overflow: scroll;
     overflow-x: hidden;
-    z-index: 12;
+    z-index: 20;
 }
 #head{
 	position:relative;
