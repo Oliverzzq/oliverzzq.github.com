@@ -7,12 +7,14 @@ body {
     padding-top: 48px;
 }
 .shopguide nav{
+    white-space: nowrap;
 	background-color: rgba(0,0,0,.4);
 	height: 48px;
 }
 .shopguide ul{
 	background-color: rgba(0,0,0,0);
 }
+
 .cd-tabs-navigation a{
 	line-height: 48px;
 }
@@ -287,6 +289,7 @@ body {
     float: left;
     width: 75%;
     height: 59px;
+    white-space: nowrap;
 }
 .shopnav-search {
     float: right;
@@ -318,7 +321,6 @@ body {
     left: 0;
 }
 .shopnav-filter {
-	width: 410px;
     float: right;
     line-height: 57px;
 }
